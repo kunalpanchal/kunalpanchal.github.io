@@ -2,13 +2,13 @@
 <html>
 
 <head>
-     <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-66029816-8"></script>
     <script>
-  	window.dataLayer = window.dataLayer || [];
-  	function gtag(){dataLayer.push(arguments);}
-  	gtag('js', new Date());
-  	gtag('config', 'UA-66029816-8');
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-66029816-8');
     </script>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,6 +21,9 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="./favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/formStyle.css">
 </head>
 
 <body>
@@ -276,8 +279,35 @@
     <div class="text-center">
         <p style="margin-top:20px">*Also love doodling, watching movies and browsing youtube...</p>
     </div>
+    <!-- FORM -->
+    <div class="kay-form">
+        <div class='form-overlay'></div>
+        <div class='icon fa fa-pencil' id='form-container'>
+            <span class='icon fa fa-close' id='form-close'></span>
+            <div id='form-content'>
+                <div id='form-head'>
+                    <div class='pre h1'>Say HI!</div>
+                    <div class='post h1'>Thanks!</div>
+                    <p class='post'>I'll be in touch ASAP</p>
+                </div>
+                <form>
+                    <input class='input name' name='user_name' placeholder='Your name' type='text'>
+                    <input class='input email' name='user_email' placeholder='A contact email' type='text'>
+                    <select class='input select' name='subject'>
+                        <option disabled=''>What shall we talk about?</option>
+                        <option selected=''>About a new project</option>
+                        <option>About a job opportunity</option>
+                        <option>Let's do this over a coffee</option>
+                    </select>
+                    <textarea class='input message message' placeholder='How can I help?'></textarea>
+                    <input class='input submit' type='submit' value='Send Message'>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/form.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
 </body>
